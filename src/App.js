@@ -1,13 +1,16 @@
-import CartItem from './cartItem';
+
 import './App.css';
 import { reduce } from 'async';
+import Cart from './cart';
 
 function App() {
   return (
     <div className="App">
       <h1>
         
-        <CartItem/>
+        <Cart/>
+        
+    
       </h1>
     </div>
   );
