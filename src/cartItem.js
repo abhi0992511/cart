@@ -44,16 +44,17 @@ class CartItem extends React.Component {
     // }
     
     render() {
-        const { price, qty, title } = this.state.product;
+        console.log('this.props',this.props);
+       //const { price, qty, title } = this.props.product;
         return (
             <div className="cart-item">
                 <div className="left-block">
                     <img style={styles.image} />
                 </div>
                 <div className="right-block">
-                    <div style={{ fontSize: 25, fontFamily: 'serif' }}>{title}</div>
-                    <div style={{ color: 'red', fontFamily: 'sans-serif' }}>{price}</div>
-                    <div>qty:{qty}</div>
+                    <div style={{ fontSize: 25, fontFamily: 'serif' }}>{this.props.product.title}</div>
+                    <div style={{ color: 'red', fontFamily: 'sans-serif' }}>{this.props.product.price}</div>
+                    <div>qty:{this.props.product.qty}</div>
                     <div className="cart-item-actions">
                         <img alt="increase " className="action-icons" src="https://t4.ftcdn.net/jpg/01/07/62/07/240_F_107620769_UwNVSoXnKS4VNcOKoZjPohlEPn83oE38.jpg" onClick={this.increasequantity} />
                         <img alt="decrese " className="action-icons" src="https://t4.ftcdn.net/jpg/02/78/84/57/240_F_278845758_9xl3srVgd8p4jquxgxugGaHV1e5EOlLO.jpg" onClick={this.decreasequantity}/>
