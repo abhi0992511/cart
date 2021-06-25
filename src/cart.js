@@ -9,22 +9,24 @@ class Cart extends React.Component {
                {
                 price: 999,
                 tiltle: 'phone',
-                qty:1
+                qty:1,
+                id:1
                },
                {
                 price: 99,
                 tiltle: 'watch',
-                qty:10
+                qty:10,
+                id:2
                },
                {
                 price: 995,
                 tiltle: 'tab',
-                qty:12
+                qty:12,id:3
                },
                {
                 price: 25252,
                 tiltle: 'tooth',
-                qty:13
+                qty:13,id:4
                }
            ]
         }
@@ -39,7 +41,7 @@ class Cart extends React.Component {
                 {
                     products.map((product)=>{
                         return
-                            <CartItem product={product}/ >
+                            <CartItem product={product.key}/ >
 
                         
                     })
