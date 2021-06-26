@@ -49,12 +49,12 @@ const CartItem = (props) => {
     return (
         <div className="cart-item">
             <div className="left-block">
-                <img style={styles.image} />
+                <img style={styles.image}  src={product.img}/>
             </div>
             <div className="right-block">
                 <div style={{ fontSize: 25, fontFamily: 'serif' }}>{props.product.title}</div>
-                <div style={{ color: 'red', fontFamily: 'sans-serif' }}>{props.product.price}</div>
-                <div>qty:{props.product.qty}</div>
+                <div style={{ color: 'red', fontFamily: 'sans-serif' }}>Price:{props.product.price}</div>
+                <div>Qty:{props.product.qty}</div>
                 <div className="cart-item-actions">
                     <img alt="increase " className="action-icons" src="https://t4.ftcdn.net/jpg/01/07/62/07/240_F_107620769_UwNVSoXnKS4VNcOKoZjPohlEPn83oE38.jpg" onClick={() => onIncrese(product)} />
                     <img alt="decrese " className="action-icons" src="https://t4.ftcdn.net/jpg/02/78/84/57/240_F_278845758_9xl3srVgd8p4jquxgxugGaHV1e5EOlLO.jpg" onClick={() => onDecrease(product)} />

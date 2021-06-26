@@ -7,7 +7,7 @@ const Navbar = (props) => {
         <div style={styles.nav}>
             <div style={styles.carticoncontainer}>
                 <img style={styles.carticon} src="https://t4.ftcdn.net/jpg/01/08/25/01/240_F_108250155_sKVpCG1nUBx3Dc7P2LV5cBCYcvDn1psk.jpg" alt="nav-icon" />
-                <span style={styles.cartcount}>4</span>
+                <span style={styles.cartcount}>{props.count}</span>
             </div>
 
         </div>
@@ -31,7 +31,7 @@ const styles = {
         alingItem: 'center'
     },
     carticoncontainer: {
-        position: 'relative'
+        position: 'fixed'
 
     },
     cartcount: {
