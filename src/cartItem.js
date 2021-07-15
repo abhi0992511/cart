@@ -56,7 +56,7 @@ const CartItem = (props) => {
                 <div style={{ color: 'red', fontFamily: 'sans-serif' }}>Price:{props.product.price}</div>
                 <div>Qty:{props.product.qty}</div>
                 <div className="cart-item-actions">
-                    <img alt="increase " className="action-icons" src="https://t4.ftcdn.net/jpg/01/07/62/07/240_F_107620769_UwNVSoXnKS4VNcOKoZjPohlEPn83oE38.jpg" onClick={() => onIncrese(product)} />
+                    <img alt="increase " className="action-icons" src="https://as2.ftcdn.net/jpg/03/16/59/73/500_F_316597363_G8dPZwXqbsq9vs7uiomI9gIlwdT7sywy.jpg" onClick={() => onIncrese(product)} />
                     <img alt="decrese " className="action-icons" src="https://t4.ftcdn.net/jpg/02/78/84/57/240_F_278845758_9xl3srVgd8p4jquxgxugGaHV1e5EOlLO.jpg" onClick={() => onDecrease(product)} />
                     <img alt="delete " className="action-icons" src="https://t3.ftcdn.net/jpg/02/58/95/14/240_F_258951445_Md7JDFw3Qj4LPTorWUYdImTzS49fSnOf.jpg" onClick={() => onDelete(product.id)} />
                 </div>
